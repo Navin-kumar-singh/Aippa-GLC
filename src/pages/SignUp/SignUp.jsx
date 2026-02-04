@@ -150,7 +150,7 @@ const SignUp = () => {
 
       const response = await axios.post(
         // 'http://localhost:3100/v2/auth/register?type=0',
-        				      'https://aippa-backend.onrender.com/v2/auth/register?type=0',
+        		'https://aippa-backend.onrender.com/v2/auth/register?type=0',
 
         apiData,
         {
