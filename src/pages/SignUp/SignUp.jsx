@@ -149,7 +149,9 @@ const SignUp = () => {
       console.log("Sending registration data:", apiData);
 
       const response = await axios.post(
-        'http://localhost:3100/v2/auth/register?type=0',
+        // 'http://localhost:3100/v2/auth/register?type=0',
+        				      'https://aippa-backend.onrender.com/v2/auth/register?type=0',
+
         apiData,
         {
           headers: {

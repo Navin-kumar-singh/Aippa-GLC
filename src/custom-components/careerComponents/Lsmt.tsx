@@ -60,7 +60,8 @@ const Lsmt = () => {
       setError(null);
       try {
         const response = await axios.get<LsmtApiResponse>(
-          'http://localhost:3100/api/v2/lsmtTest/allQuestion'
+          // 'http://localhost:3100/api/v2/lsmtTest/allQuestion'
+          'https://aippa-backend.onrender.com/api/v2/lsmtTest/allQuestion'
         );
         
         console.log("lsmt question response:", response.data);

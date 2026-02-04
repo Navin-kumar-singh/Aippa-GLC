@@ -89,7 +89,7 @@ const RaisecTest = () => {
 			setQuestionData(data.data.result);
 			setResponses(Array(data.data.result.length).fill(null));
 		}
-	}, [data]);
+	}, [data]);33
 
 	useEffect(() => {
 		if (questionData.length > 0) {
@@ -104,7 +104,9 @@ const RaisecTest = () => {
 				setError(null);
 				try {
 					const response = await axios.get<ApiResponse>(
-						'http://localhost:3100/api/v2/riasecTest/allQuestion'
+						// 'http://localhost:3100/api/v2/riasecTest/allQuestion'
+						'https://aippa-backend.onrender.com/api/v2/riasecTest/allQuestion'
+
 					);
 					
 					console.log("this is risec question data", response.data);
